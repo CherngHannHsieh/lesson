@@ -53,7 +53,8 @@
 
 #background #header .nav .content .login .container{
     width: 320px;
-    height: 238px;
+    /* height: 238px; */
+    height: 159px;
     /* background-color: red; */
 }
 
@@ -87,3 +88,109 @@
     margin-bottom: 16.8px;
 }
 
+/* #background #header .nav .content .login .container .cf .sub{
+    
+    background-color: #5AAC44;
+    text-align: center;
+} */
+
+#background #header .nav .content .login .container .cf .sub .subBtn{
+    width: 302px;
+    height: 36.8px;
+    /* padding: 8.4px 18.2px 8.4px 18.2px; */
+    background-color: #5AAC44;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#background #header .nav .content .login .google-login .or{
+    width: 320px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#background #header .nav .content .login .google-login .google{
+    text-align: center;
+    width: 99%;
+    height: 39px;
+    border: 1px solid #dfe1e6;
+    border-radius: 3px;
+}
+
+#background #header .nav .content .login .google-login .google .icon{
+    width: 18px;
+    height: 18px;
+    vertical-align: center;
+}
+
+#background #header .nav .content .login .google-login .google .use-google{
+    font-weight: bold;
+    color: #505f79;
+    padding: 3px;
+    height: 32px;
+    line-height: 32px;
+    background-color: white; 
+}
+
+#background #header .nav .content .login .line{
+    margin-top: 25px;
+    margin-bottom: 14px;
+}
+
+#background #header .nav .content .login .inside-other{
+    width: 320px;
+    height: 28px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+#background #header .nav .content .login .inside-other .forget{
+    text-decoration: none;
+    color: #0052CC;
+}
+
+#background #header .nav .content .login .inside-other .sign{
+    text-decoration: none;
+    color: #0052CC;
+}
+
+#background #header .nav .content .out-other{
+    width: 400px;
+    height: 28px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+#background #header .nav .content .out-other .policy{
+    text-decoration: none;
+    color: #0052CC;
+}
+
+#background #header .nav .content .out-other .service{
+    text-decoration: none;
+    color: #0052CC;
+}
+
+#background #header .trello-footer .language-select{
+    width: 100%;
+    height: 38px;
+    margin-bottom: 16.8px;
+    text-align: center;
+} 
+
+#background #header .trello-footer .language-select #selecter{
+    width: auto;
+    height: 100%;
+    background: none;
+    color: #959da1;
+    border: 2px solid #EDEFF0;
+}

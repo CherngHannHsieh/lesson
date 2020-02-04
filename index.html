@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登入 Trello</title>
     <link rel="stylesheet" href="styles.css">
+    <script  type="text/javascript" src="func.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body id="background">
 
@@ -28,14 +30,65 @@
                                 <input type="password" class="password" placeholder="輸入密碼">
                             </div>
                             <div class="sub">
-                                <input type="submit" value="登入">
+                                <input type="submit" value="登入" class="subBtn">
                             </div>
                         </form>
                     </div>
+                    <div class="google-login">
+                        <div class="or">OR</div>
+                        <div class="google">
+                            <span class="icon"></span>
+                            <span class="use-google">用 Google 登入</span>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <hr>
+                    </div>
+                    <div class="inside-other">
+                        <a href="https://trello.com/forgot" class="forget" target="_blank">無法登入?</a>
+                        ・
+                        <a href="https://trello.com/signup" class="sign" target="_blank">註冊帳號</a>
+                    </div>
+                </div>
+                <div class="out-other">
+                    <a href="https://www.atlassian.com/legal/privacy-policy" class="policy" target="_blank">隱私政策</a>
+                    ・
+                    <a href="https://www.atlassian.com/legal/cloud-terms-of-service" class="service" target="_blank">服務條款</a>
                 </div>
             </div>
         </section>
+        <footer class="trello-footer">
+            <div class="language-select">
+                <select name="" id="selecter">      <!-- data-url 是什麼  似乎是jquery/javascript/ajax的功能 https://stackoverflow.com/questions/35717308/on-selecting-option-from-select-redirect-to-html-page-->
+                    <option value="choose" disabled="true">請選擇語言...</option>
+                    <option value="ce" data-url:="https://trello.com/cs/login">Čeština</option>
+                    <option value="de" data-url:="https://trello.com/de/login">Deutsch</option>
+                    <option value="en">English</option>
+                    <option value="au">English(AU)</option>
+                    <option value="uk">English(UK)</option>
+                    <option value="us">English(US)</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Francais</option>
+                    <option value="it">Italiano</option>
+                    <option value="ma">Magyar</option>
+                    <option value="ne">Nederlands</option>
+                    <option value="no">Norsk(bokmål)</option>
+                    <option value="po">Polski</option>
+                    <option value="por">Português(Brasil)</option>
+                    <option value="su">Suomi</option>
+                    <option value="sv">Svenska</option>
+                    <option value="ti">Tiếng Việt</option>
+                    <option value="tu">Türkçe</option>
+                    <option value="py">Pу́сский</option>
+                    <option value="yk">Українська</option>
+                    <option value="th">ภาษาไทย</option>
+                    <option value="china">中文(简体)</option>
+                    <option value="taiwan">中文(繁體)</option>
+                    <option value="jp">日本語</option>
+                </select>
+            </div>
+        </footer>
     </div>
-
+    
 </body>
 </html>
