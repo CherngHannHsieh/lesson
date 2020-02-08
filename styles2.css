@@ -26,41 +26,48 @@
 
 #background #header .nav{
     width: 100%;
-    height: 473.38px;
+    height: 413px;
     overflow: visible;
     margin-bottom: 30px;
 }
 
 #background #header .nav .content{
     max-width: 400px;
-    height: 473.38px;
-    margin:0 474.5px 0 474.5px;
+    height: 414px;
+    margin:0 475px 0 475px;
 }
 
-#background #header .nav .content .login{
+#background #header .nav .content .create{
     padding: 25px 40px;
     background-color: white;
 }
 
-#background #header .nav .content .login .lt{
+#background #header .nav .content .create .lt{
     width: 320px;
     height: 28px;
     color: #4d4d4d;
     text-align: center;
     font-weight: 300;
     line-height: 1.44em;
+    margin-bottom: 25px;
 }
 
-#background #header .nav .content .login .container{
+#background #header .nav .content .create .lt h1{
+    font-size: 16px;
+    color: #5E6C84;
+    
+}
+
+#background #header .nav .content .create .container{
     width: 320px;
     /* height: 238px; */
-    height: 159px;
+    height: 152px;
     /* background-color: red; */
 }
 
 
 
-#background #header .nav .content .login .container .cf .formMail .mail{
+#background #header .nav .content .create .container .cf .formMail .mail{
     width: 302px;
     height: 44px;
     background-color: #fafbfc;
@@ -74,27 +81,13 @@
     margin-bottom: 16.8px;
 }
 
-#background #header .nav .content .login .container .cf .formPassword .password{
-    width: 302px;
-    height: 44px;
-    background-color: #fafbfc;
-    padding: 7px;
-    border: 2px solid #dfe1e6;
-    box-sizing: border-box;
-    border-radius: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 16.8px;
-}
-
-/* #background #header .nav .content .login .container .cf .sub{
+/* #background #header .nav .content .create .container .cf .sub{
     
     background-color: #5AAC44;
     text-align: center;
 } */
 
-#background #header .nav .content .login .container .cf .sub .subBtn{
+#background #header .nav .content .create .container .cf .sub .subBtn{
     width: 302px;
     height: 36.8px;
     /* padding: 8.4px 18.2px 8.4px 18.2px; */
@@ -107,16 +100,16 @@
     border-radius: 3px;
 }
 
-#background #header .nav .content .login .google-login .or{
+#background #header .nav .content .create .google-login .or{
     width: 320px;
     height: 28px;
     text-align: center;
     font-size: 12px;
-    margin-top: 5px;
+    margin-top: 25px;
     margin-bottom: 5px;
 }
 
-#background #header .nav .content .login .google-login .google{
+#background #header .nav .content .create .google-login .google{
     text-align: center;
     width: 99%;
     height: 39px;
@@ -124,13 +117,13 @@
     border-radius: 3px;
 }
 
-#background #header .nav .content .login .google-login .google .icon{
+#background #header .nav .content .create .google-login .google .icon{
     width: 18px;
     height: 18px;
     vertical-align: center;
 }
 
-#background #header .nav .content .login .google-login .google .use-google{
+#background #header .nav .content .create .google-login .google .use-google{
     font-weight: bold;
     color: #505f79;
     padding: 3px;
@@ -139,12 +132,12 @@
     background-color: white; 
 }
 
-#background #header .nav .content .login .line{
+#background #header .nav .content .create .line{
     margin-top: 25px;
     margin-bottom: 14px;
 }
 
-#background #header .nav .content .login .inside-other{
+#background #header .nav .content .create .inside-other{
     width: 320px;
     height: 28px;
     margin-top: 14px;
@@ -152,12 +145,12 @@
     text-align: center;
 }
 
-#background #header .nav .content .login .inside-other .forget{
+#background #header .nav .content .create .inside-other .forget{
     text-decoration: none;
     color: #0052CC;
 }
 
-#background #header .nav .content .login .inside-other .sign{
+#background #header .nav .content .create .inside-other .sign{
     text-decoration: none;
     color: #0052CC;
 }
@@ -187,12 +180,13 @@
     text-align: center;
 } 
 
-#background #header .trello-footer .language-select #selecter{
+#background #header .trello-footer .language-select #selecter{          
     width: auto;
     height: 100%;
     background: none;
     color: #959da1;
     border: 2px solid #EDEFF0;
+    margin-top: 10px;
 }
 
 #background #header .trello-footer .out-logo{
