@@ -232,3 +232,14 @@
     text-decoration: none;
     color: #4d4d4d;
 }
+
+#background .leftPic{
+    background-color:red;
+    width: 400px;
+    height: 378px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+    max-width: 30%;
+}

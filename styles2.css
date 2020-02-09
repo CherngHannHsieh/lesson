@@ -91,13 +91,28 @@
     width: 302px;
     height: 36.8px;
     /* padding: 8.4px 18.2px 8.4px 18.2px; */
-    background-color: #5AAC44;
-    color: white;
+    /* background-color: #5AAC44; */
+    /* color: white; */
+    background: #e2e4e6;
+    color: hsl(0,0%,55%);
     font-weight: bold;
     text-align: center;
     border: none;
     box-sizing: border-box;
     border-radius: 3px;
+}
+
+#background #header .nav .content .create .container .cf .sub .subBtn.Change{
+    /* width: 302px;
+    height: 36.8px; */
+    /* padding: 8.4px 18.2px 8.4px 18.2px; */
+    background-color: #5AAC44; 
+    color: white;
+    /* font-weight: bold;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 3px; */
 }
 
 #background #header .nav .content .create .google-login .or{

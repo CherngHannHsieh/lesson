@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>建立 Trello 帳號</title>
     <link rel="stylesheet" href="styles2.css">
-    <script  type="text/javascript" src="func.js"></script>
+    <script  type="text/javascript" src="create.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body id="background">
 
@@ -22,14 +23,14 @@
                         <h1>註冊帳號</h1>
                     </div>
                     <div class="container">
-                        <form class="cf">
+                        <form class="cf" @submit.prevent="accountSub" action="create2.html">
                             <div class="formMail">
-                                <input type="text" class="mail" placeholder="輸入電子郵件">
+                                <input  v-model="mailAccount" type="text" class="mail" placeholder="輸入電子郵件">
                             </div>
                             <p class="word">註冊即表示你確認已閱讀並接受我們的<a href="#">服務條款</a>和<a href="#">隱私政策</a>。</p>
                             
                             <div class="sub">
-                                <input type="submit" value="繼續" class="subBtn">
+                                <button class="subBtn" :class="{Change:isChange}" :style="{disabled:isDis}">繼續</button>
                             </div>
                         </form>
                     </div>
