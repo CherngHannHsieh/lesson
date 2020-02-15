@@ -14,12 +14,16 @@
                 <h1>註冊帳號</h1>
                 <form target="the_iframe">
                     <div style="text-align: center;"><input type="text" class="mail" placeholder="輸入電子郵件" v-model = "signAccount"></div>
+                    <div class="tooltip" :style="{display:isError}">    <!-- vue fadein fadeout have some troblue-->
+                        <span class="tooltiptext"></span>
+                        <span class="tri">請輸入「@」後面的部分。「{{errorMsg}}」不是完整值。</span>
+                    </div>
                     <p class="pw">註冊即表示你確認已閱讀並接受我們的
                         <a href="#" style="text-decoration: none;color: #0052cc;">服務條款</a>和
                         <a href="#" style="text-decoration: none;color: #0052cc;">隱私政策</a>。
                     </p>
                     <div style="text-align: center;"><button class="sub" :class="{haveAt:isHave}" :disabled="isAble" @click="signSub">繼續</button></div>
-                </form>    
+                </form>
                 <iframe id="is_iframe" name="the_iframe" style="display: none;"></iframe>                                                                       <!--  -->
                 <div :style="{display:isDis}">
                     <div class="or">或者</div>
