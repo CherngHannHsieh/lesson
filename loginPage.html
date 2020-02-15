@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入 Trello</title>
+    <link rel="stylesheet" href="loginPage.css">
+</head>
+<body class="back">
+    <div class="header">
+        <div class="trello-logo"><img src="trello.png"></div>
+        <div class="inner-part">
+            <div class="box">  <!--white box-->
+                <div class="error-catch" :style="{display:isDis}">   
+                    <p class="error-message">{{errMsg}}</p>
+                </div>
+                <h1>登入 Trello</h1>
+                <div>       <!--white box before <hr>--->
+                    <form class="login-form" target="the_iframe">
+                        <div style="text-align: center;"><input type="text" class="mail" placeholder="輸入電子郵件" v-model="user.account"></div>
+                        <div style="text-align: center;"><input type="password" class="password" placeholder="輸入密碼" v-model="user.password"></div>
+                        <div style="text-align: center;"><button class="sub" @click="infoSub">登入</button></div>
+                    </form>
+                    <iframe id="is_iframe" name="the_iframe" style="display: none;"></iframe>
+                    <div>
+                        <div class="or">或者</div>
+                        <div class="google-button">
+                            <span></span>
+                            <span class="google-login">用 Google 登入</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="forget-sign">
+                    <a href="https://trello.com/forgot" class="forget" target="_self" style="text-decoration: none;color: #0052cc;">無法登入?</a>
+                    ・
+                    <a href="signPage.html" class="sign" target="_self" style="text-decoration: none;color: #0052cc;">註冊帳號</a>
+                </div>
+            </div>
+            <div class="privacy-service">
+                <a href="https://www.atlassian.com/legal/privacy-policy" target="_blank" style="text-decoration: none;color: #0052cc;">隱私政策</a>
+                ・
+                <a href="https://www.atlassian.com/legal/cloud-terms-of-service" target="_blank" style="text-decoration: none;color: #0052cc;">服務條款</a>
+            </div>
+        </div>  
+    </div>
+
+    <footer class="foot">
+        <div class="lang-select">
+            <select name="" id="selecter">     
+                <option value="choose" disabled="true">請選擇語言...</option>
+                <option value="ce">Čeština</option>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="au">English(AU)</option>
+                <option value="uk">English(UK)</option>
+                <option value="us">English(US)</option>
+                <option value="es">Español</option>
+                <option value="fr">Francais</option>
+                <option value="it">Italiano</option>
+                <option value="ma">Magyar</option>
+                <option value="ne">Nederlands</option>
+                <option value="no">Norsk(bokmål)</option>
+                <option value="po">Polski</option>
+                <option value="por">Português(Brasil)</option>
+                <option value="su">Suomi</option>
+                <option value="sv">Svenska</option>
+                <option value="ti">Tiếng Việt</option>
+                <option value="tu">Türkçe</option>
+                <option value="py">Pу́сский</option>
+                <option value="yk">Українська</option>
+                <option value="th">ภาษาไทย</option>
+                <option value="china">中文(简体)</option>
+                <option value="taiwan">中文(繁體)</option>
+                <option value="jp">日本語</option>
+            </select>
+        </div>
+        <div class="hr-logo">
+            <hr style="max-width: 400px;">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/16006ae28f149063408d601e8c80eddc/atlassian-logo-blue-small.svg" alt="" class="atlassian">
+        </div>
+        <div class="foot-list">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#" class="list-btn">範本</a>
+            <a href="#" class="list-btn">價格</a>
+            <a href="#" class="list-btn">Apps</a>
+            <a href="#" class="list-btn">工作機會</a>
+            <a href="#" class="list-btn">部落格</a>
+            <a href="#" class="list-btn">開發者</a>
+            <a href="#" class="list-btn">關於</a>
+            <a href="#" class="list-btn">求助</a>
+            <a href="#" class="list-btn">Cookie 設定</a>
+        </div>
+    </footer>
+    
+    <div class="big-picture">  
+        <img src="left.png" alt="" class="left-picture">  
+        <img src="right.png" alt="" class="right-picture">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="loginPage.js"></script>
+</body>
+</html>
