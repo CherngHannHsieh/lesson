@@ -1,4 +1,4 @@
-new Vue({
+var sp = new Vue({
     el:".box",
     data:{
         signAccount:"",
@@ -33,20 +33,25 @@ new Vue({
             
             var atlocation = this.signAccount.indexOf("@");
 
-            if((this.signAccount.substring(0,atlocation)=="") ||
+            if(
+            (this.signAccount.substring(0,atlocation)=="") ||
             (this.signAccount.indexOf("@") > this.signAccount.indexOf("gmail")) || 
             (this.signAccount.indexOf("@") > this.signAccount.indexOf(".com")) || 
-            (this.signAccount.indexOf("gmail") > this.signAccount.indexOf(".com"))){
+            (this.signAccount.indexOf("gmail") > this.signAccount.indexOf(".com"))
+            ){
                 // alert("mail error");
                 this.isError = "block";
                 // var atlocation = this.signAccount.indexOf("@");
                 var salength = this.signAccount.length;
                 this.errorMsg = this.signAccount.substr(atlocation,salength);
             }else{
-                document.location.href="signPageNext.html";
-                
                 this.signUserName = this.signAccount.substring(0,atlocation);
+                document.location.href="signPageNext.html";
             }
+        },
+
+        disappear:function(){
+            this.isError = "none";
         }
     }
 });

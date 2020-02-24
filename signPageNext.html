@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>註冊 - 使用 Atlassian 帳戶登入</title>
+    <link rel="stylesheet" href="signPageNext.css">
 </head>
-<body>
-    <h1>testing</h1>
+<body class="back">
+    <div class="header">
+        <div class="trello-logo"><img src="trello.png"></div>
+        <div class="inner-part">
+            <div class="box">  <!--white box-->
+                <h1>註冊帳戶</h1>
+                <form target="the_iframe">
+                    <div style="text-align: center;">
+                        <input type="text" class="mail" placeholder="輸入電子郵件" v-model="account" :style="{border:iserror}">
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="text" class="username" placeholder="輸入全名" v-model="username" :style="{border:iserror1}">
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="password" class="password" placeholder="建立密碼" v-model="passwordIndex" :style="{border:iserror2}">
+
+                        <div class="zero" :style="{background:inc0}"></div>
+                        <div class="one" :style="{background:inc1}"></div>
+                        <div class="two" :style="{background:inc2}"></div>
+                        <div class="three" :style="{background:inc3}"></div>
+                        <div class="four" :style="{background:inc4}"></div>
+                    </div>
+                    <div style="text-align: center; font-size: 14px; color: hsl(0, 0%, 60%);">
+                        {{passwordStrong}}
+                    </div>
+                    <p style="font-size: 12px; color:  hsl(0, 0%, 60%); margin: 30px 0;">
+                        註冊後，即表示我接受 Atlassian 的
+                        <a href="#" style="text-decoration: none;color: #0052cc;">使用者聲明</a>，並認可
+                        <a href="#" style="text-decoration: none;color: #0052cc;">隱私權政策</a>。
+                    </p>
+                    <div style="text-align: center;"><button class="sub" @click="assign">註冊</button></div>
+                </form>
+                <iframe id="is_iframe" name="the_iframe" style="display: none;"></iframe>                                                                       <!--  -->
+                <div>
+                    <div class="or">或是</div>
+                    <div class="google-button">
+                        <span></span>
+                        <span class="google-login">使用 Google 帳戶登入</span>
+                    </div>
+                    <div class="micro-button">
+                        <span></span>
+                        <span class="micro-login">以 Microsoft 繼續</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="have-account">
+                    <a href="#" style="text-decoration: none;color: #0052cc;">已有 Atlassian 帳戶?登入</a>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <footer class="foot">
+        <p style="text-align: center; font-size: 12px; color:  hsl(0, 0%, 60%); margin-bottom: 25px;">
+            此頁面受 reCAPTCHA 保護，並適用 Google <a href="#" style="text-decoration: none;color: #0052cc;">隱私權政策</a>
+            和<a href="#" style="text-decoration: none;color: #0052cc;">服務條款</a>
+        </p>
+        <div class="hr-logo">
+            <hr style="max-width: 400px;">
+            <img src="https://d2k1ftgv7pobq7.cloudfront.net/meta/c/p/res/images/16006ae28f149063408d601e8c80eddc/atlassian-logo-blue-small.svg" alt="" class="atlassian">
+            <p style="margin: 0px; text-align: center; font-size: 12px; color:  hsl(0, 0%, 60%);">One account for Trello, Jira, Confluence and 
+                <a href="#" style="text-decoration: none;color: #0052cc;">more</a>
+            </p>
+        </div>
+    </footer>
+    
+    <div class="big-picture">  
+        <img src="left.png" alt="" class="left-picture">  
+        <img src="right.png" alt="" class="right-picture">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="signPageNext.js"></script>
 </body>
 </html>

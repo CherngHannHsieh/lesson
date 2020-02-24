@@ -1,0 +1,254 @@
+.back{
+    background-color: #F9FAFC;
+    font-family: "-apple-system",BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 14px;
+}
+
+.back .header .trello-logo{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.back .header .inner-part .box{
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
+}
+
+.back .header .inner-part .box h1{
+    text-align: center;
+    color: #5e6c84;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.back .header .inner-part .box .mail{
+    width: 317px;
+    height: 38px;
+    background-color: #fafbfc;
+    padding: 7px;
+    border: 2px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.back .header .inner-part .box .username{
+    width: 317px;
+    height: 38px;
+    background-color: #fafbfc;
+    padding: 7px;
+    border: 2px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.back .header .inner-part .box .password{
+    width: 317px;
+    height: 38px;
+    background-color: #fafbfc;
+    padding: 7px;
+    border: 2px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    /* margin-bottom: 12px; */
+    font-size: 14px;
+}
+
+.back .header .inner-part .box  .zero{
+    width: 57px;
+    height: 2px;
+    background-color: #dfe1e6;
+    margin: 1px;
+    display: inline-block;
+
+}
+
+.back .header .inner-part .box  .one{
+    width: 57px;
+    height: 2px;
+    background-color: #dfe1e6;
+    margin: 1px;
+    display: inline-block;
+}
+
+.back .header .inner-part .box  .two{
+    width: 57px;
+    height: 2px;
+    background-color: #dfe1e6;
+    margin: 1px;
+    display: inline-block;
+}
+
+.back .header .inner-part .box  .three{
+    width: 57px;
+    height: 2px;
+    background-color: #dfe1e6;
+    margin: 1px;
+    display: inline-block;
+}
+
+.back .header .inner-part .box  .four{
+    width: 57px;
+    height: 2px;
+    background-color: #dfe1e6;
+    margin: 1px;
+    display: inline-block;
+}
+
+.back .header .inner-part .box .sub{
+    width: 320px;
+    height: 38px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border: none;
+    box-sizing: border-box;
+    border-radius: .3em;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.back .header .inner-part .box .or{
+    width: 320px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+    color: hsl(0, 0%, 60%);
+    line-height: 1.44em;
+    font-weight: 300;
+}
+
+.back .header .inner-part .box .google-button{
+    text-align: center;
+    width: 99%;
+    height: 39px;
+    border: 1px solid #dfe1e6;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0;
+    margin-bottom: 15px;
+}
+
+.back .header .inner-part .box .google-button .google-login{
+    font-weight: bold;
+    color: #505f79;
+    padding: 3px;
+    height: 32px;
+    line-height: 32px;
+    background-color: white; 
+}
+
+.back .header .inner-part .box .micro-button{
+    text-align: center;
+    width: 99%;
+    height: 39px;
+    border: 1px solid #dfe1e6;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 0;
+}
+
+.back .header .inner-part .box .micro-button .micro-login{
+    font-weight: bold;
+    color: #505f79;
+    padding: 3px;
+    height: 32px;
+    line-height: 32px;
+    background-color: white; 
+}
+
+.back .header .inner-part .box hr{
+    margin-top: 25px;
+    margin-bottom: 14px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(0,0%,80%);
+    /* margin: 1em 0;
+    padding: 0; */
+}
+
+.back .header .inner-part .box .have-account{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.44em;
+}
+
+.back .foot{
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 34px;
+    margin-bottom: 24px;
+}
+
+.back .foot .lang-select{ 
+    width: 100%;
+    height: 38px;
+    margin-bottom: 16.8px;
+    text-align: center;
+}
+
+.back .foot .lang-select #selecter{ 
+    width: auto;
+    height: 100%;
+    background: none;
+    color: #959da1;
+    border: 2px solid #EDEFF0;
+}
+
+.back .foot .hr-logo{
+    text-align: center;
+    height: 66.7px;
+}
+
+.back .foot .hr-logo .atlassian{
+    width: 150px;
+    height: 19px;
+    margin-top: 16.8px;            
+    margin-bottom: 5px;
+    vertical-align: center;
+}
+
+.back .foot .foot-list{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 16.8px;
+    max-width: 45%;
+    height: 20px;
+}
+
+.back .foot .foot-list .list-btn{
+    width: 28px;
+    height: 20px;
+    margin-left: 5.6px;
+    margin-right: 5.6px;
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+.back .big-picture{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+}
